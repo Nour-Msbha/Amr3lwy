@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#333333">
+<title>AMR &amp; ELWY - الوجبات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="AMR &amp; ELWY LOGO"></a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="ابحث عن وجبة..." aria-label="بحث">
+      <button class="search-btn" type="button" id="searchBtn" aria-label="بحث">🔍</button>
+    </div>
+    <button class="menu-icon" id="menuTogg" type="button" aria-label="القائمة">☰</button>
+  </div>
+</header>
+<nav class="main-nav"><ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul></nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" id="closeMenu">&times;</span>
+  <ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul>
+</div>
+<button id="cart-btn" class="cart-fab" type="button" aria-label="فتح السلة">🛒 <span id="cart-count">0</span></button>
+<main>
+<h1 class="page-title">قائمة الوجبات</h1>
+<div class="chips"><a href="#pizza">البيتزا</a><a href="#pasta">الباستا</a><a href="#sandwich">ساندوتشات ومخبوزات</a><a href="#chicken">وجبات الدجاج</a><a href="#grill">المشاوي</a><a href="#oriental">الأطباق الشرقية</a><a href="#sides">شوربة وأرز</a></div>
+<h2 class="menu-section-title" id="pizza">البيتزا</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="بيتزا بيبروني">
+      <img src="img/i15.jpg" alt="بيتزا بيبروني" loading="lazy">
+      <p>بيتزا بيبروني - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا بيبروني" data-price="120" data-img="img/i15.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا باربيكيو">
+      <img src="img/i05.jpg" alt="بيتزا باربيكيو" loading="lazy">
+      <p>بيتزا باربيكيو - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا باربيكيو" data-price="120" data-img="img/i05.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا بسطرمة">
+      <img src="img/i07.jpg" alt="بيتزا بسطرمة" loading="lazy">
+      <p>بيتزا بسطرمة - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا بسطرمة" data-price="120" data-img="img/i07.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا رانش">
+      <img src="img/i20.jpg" alt="بيتزا رانش" loading="lazy">
+      <p>بيتزا رانش - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا رانش" data-price="120" data-img="img/i20.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا عشاق الجبن">
+      <img src="img/i34.jpg" alt="بيتزا عشاق الجبن" loading="lazy">
+      <p>بيتزا عشاق الجبن - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا عشاق الجبن" data-price="120" data-img="img/i34.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا فاهيتا">
+      <img src="img/i37.jpg" alt="بيتزا فاهيتا" loading="lazy">
+      <p>بيتزا فاهيتا - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا فاهيتا" data-price="120" data-img="img/i37.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا فراخ">
+      <img src="img/i42.jpg" alt="بيتزا فراخ" loading="lazy">
+      <p>بيتزا فراخ - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا فراخ" data-price="120" data-img="img/i42.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا مشكل جبن">
+      <img src="img/i55.jpg" alt="بيتزا مشكل جبن" loading="lazy">
+      <p>بيتزا مشكل جبن - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا مشكل جبن" data-price="120" data-img="img/i55.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا مشكل لحوم">
+      <img src="img/i56.jpg" alt="بيتزا مشكل لحوم" loading="lazy">
+      <p>بيتزا مشكل لحوم - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا مشكل لحوم" data-price="120" data-img="img/i56.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا مفروم">
+      <img src="img/i58.jpg" alt="بيتزا مفروم" loading="lazy">
+      <p>بيتزا مفروم - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا مفروم" data-price="120" data-img="img/i58.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا استربس">
+      <img src="img/i03.jpg" alt="بيتزا استربس" loading="lazy">
+      <p>بيتزا استربس - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا استربس" data-price="120" data-img="img/i03.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بيتزا هوت دوج">
+      <img src="img/i69.jpg" alt="بيتزا هوت دوج" loading="lazy">
+      <p>بيتزا هوت دوج - 120 L.E</p>
+      <button type="button" class="add-btn" data-name="بيتزا هوت دوج" data-price="120" data-img="img/i69.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="pasta">الباستا</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="مكرونة بولونيز">
+      <img src="img/i14.jpg" alt="مكرونة بولونيز" loading="lazy">
+      <p>مكرونة بولونيز - 85 L.E</p>
+      <button type="button" class="add-btn" data-name="مكرونة بولونيز" data-price="85" data-img="img/i14.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مكرونة بينا ريد صوص">
+      <img src="img/i17.jpg" alt="مكرونة بينا ريد صوص" loading="lazy">
+      <p>مكرونة بينا ريد صوص - 85 L.E</p>
+      <button type="button" class="add-btn" data-name="مكرونة بينا ريد صوص" data-price="85" data-img="img/i17.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مكرونة بشاميل">
+      <img src="img/i08.jpg" alt="مكرونة بشاميل" loading="lazy">
+      <p>مكرونة بشاميل - 85 L.E</p>
+      <button type="button" class="add-btn" data-name="مكرونة بشاميل" data-price="85" data-img="img/i08.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مكرونة نجرسكو">
+      <img src="img/i66.jpg" alt="مكرونة نجرسكو" loading="lazy">
+      <p>مكرونة نجرسكو - 85 L.E</p>
+      <button type="button" class="add-btn" data-name="مكرونة نجرسكو" data-price="85" data-img="img/i66.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="sandwich">ساندوتشات ومخبوزات</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="برجر">
+      <img src="img/i06.jpg" alt="برجر" loading="lazy">
+      <p>برجر - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="برجر" data-price="60" data-img="img/i06.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ساندوتش كفتة على الفحم">
+      <img src="img/i46.jpg" alt="ساندوتش كفتة على الفحم" loading="lazy">
+      <p>ساندوتش كفتة على الفحم - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="ساندوتش كفتة على الفحم" data-price="60" data-img="img/i46.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="حواوشي">
+      <img src="img/i19.jpg" alt="حواوشي" loading="lazy">
+      <p>حواوشي - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="حواوشي" data-price="60" data-img="img/i19.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ساندوتش فاهيتا">
+      <img src="img/i36.jpg" alt="ساندوتش فاهيتا" loading="lazy">
+      <p>ساندوتش فاهيتا - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="ساندوتش فاهيتا" data-price="60" data-img="img/i36.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مناقيش باللحمة">
+      <img src="img/i61.jpg" alt="مناقيش باللحمة" loading="lazy">
+      <p>مناقيش باللحمة - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="مناقيش باللحمة" data-price="60" data-img="img/i61.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مناقيش">
+      <img src="img/i62.jpg" alt="مناقيش" loading="lazy">
+      <p>مناقيش - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="مناقيش" data-price="60" data-img="img/i62.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="سمبوسة جبن">
+      <img src="img/i24.jpg" alt="سمبوسة جبن" loading="lazy">
+      <p>سمبوسة جبن - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="سمبوسة جبن" data-price="60" data-img="img/i24.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="سمبوسة لحمة">
+      <img src="img/i25.jpg" alt="سمبوسة لحمة" loading="lazy">
+      <p>سمبوسة لحمة - 60 L.E</p>
+      <button type="button" class="add-btn" data-name="سمبوسة لحمة" data-price="60" data-img="img/i25.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="chicken">وجبات الدجاج</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="بيكاتا مشروم">
+      <img src="img/i16.jpg" alt="بيكاتا مشروم" loading="lazy">
+      <p>بيكاتا مشروم - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="بيكاتا مشروم" data-price="110" data-img="img/i16.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="فراخ على الفحم">
+      <img src="img/i41.jpg" alt="فراخ على الفحم" loading="lazy">
+      <p>فراخ على الفحم - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="فراخ على الفحم" data-price="110" data-img="img/i41.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مشاوي فراخ">
+      <img src="img/i52.jpg" alt="مشاوي فراخ" loading="lazy">
+      <p>مشاوي فراخ - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="مشاوي فراخ" data-price="110" data-img="img/i52.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="نص فرخة شيش على الفحم">
+      <img src="img/i67.jpg" alt="نص فرخة شيش على الفحم" loading="lazy">
+      <p>نص فرخة شيش على الفحم - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="نص فرخة شيش على الفحم" data-price="110" data-img="img/i67.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ستربس">
+      <img src="img/i23.jpg" alt="ستربس" loading="lazy">
+      <p>ستربس - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="ستربس" data-price="110" data-img="img/i23.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="كوردن بلو">
+      <img src="img/i48.jpg" alt="كوردن بلو" loading="lazy">
+      <p>كوردن بلو - 110 L.E</p>
+      <button type="button" class="add-btn" data-name="كوردن بلو" data-price="110" data-img="img/i48.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="grill">المشاوي</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="كباب على الفحم">
+      <img src="img/i44.jpg" alt="كباب على الفحم" loading="lazy">
+      <p>كباب على الفحم - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="كباب على الفحم" data-price="180" data-img="img/i44.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="كفتة على الفحم">
+      <img src="img/i47.jpg" alt="كفتة على الفحم" loading="lazy">
+      <p>كفتة على الفحم - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="كفتة على الفحم" data-price="180" data-img="img/i47.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مشاوي لحوم">
+      <img src="img/i53.jpg" alt="مشاوي لحوم" loading="lazy">
+      <p>مشاوي لحوم - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="مشاوي لحوم" data-price="180" data-img="img/i53.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ميكس مشاوي">
+      <img src="img/i65.jpg" alt="ميكس مشاوي" loading="lazy">
+      <p>ميكس مشاوي - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="ميكس مشاوي" data-price="180" data-img="img/i65.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="طرب">
+      <img src="img/i33.jpg" alt="طرب" loading="lazy">
+      <p>طرب - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="طرب" data-price="180" data-img="img/i33.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="نيفة">
+      <img src="img/i68.jpg" alt="نيفة" loading="lazy">
+      <p>نيفة - 180 L.E</p>
+      <button type="button" class="add-btn" data-name="نيفة" data-price="180" data-img="img/i68.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="oriental">الأطباق الشرقية</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="فتة عكاوي">
+      <img src="img/i38.jpg" alt="فتة عكاوي" loading="lazy">
+      <p>فتة عكاوي - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="فتة عكاوي" data-price="90" data-img="img/i38.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="فتة كوارع">
+      <img src="img/i39.jpg" alt="فتة كوارع" loading="lazy">
+      <p>فتة كوارع - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="فتة كوارع" data-price="90" data-img="img/i39.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="فتة لحمة">
+      <img src="img/i40.jpg" alt="فتة لحمة" loading="lazy">
+      <p>فتة لحمة - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="فتة لحمة" data-price="90" data-img="img/i40.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="طاجن بامية">
+      <img src="img/i31.jpg" alt="طاجن بامية" loading="lazy">
+      <p>طاجن بامية - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="طاجن بامية" data-price="90" data-img="img/i31.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="طاجن خضار">
+      <img src="img/i32.jpg" alt="طاجن خضار" loading="lazy">
+      <p>طاجن خضار - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="طاجن خضار" data-price="90" data-img="img/i32.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ملوخية">
+      <img src="img/i59.jpg" alt="ملوخية" loading="lazy">
+      <p>ملوخية - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="ملوخية" data-price="90" data-img="img/i59.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ممبار">
+      <img src="img/i60.jpg" alt="ممبار" loading="lazy">
+      <p>ممبار - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="ممبار" data-price="90" data-img="img/i60.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مشكل محاشي">
+      <img src="img/i57.jpg" alt="مشكل محاشي" loading="lazy">
+      <p>مشكل محاشي - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="مشكل محاشي" data-price="90" data-img="img/i57.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="مشكل باللحمة">
+      <img src="img/i54.jpg" alt="مشكل باللحمة" loading="lazy">
+      <p>مشكل باللحمة - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="مشكل باللحمة" data-price="90" data-img="img/i54.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="صينية اللمة">
+      <img src="img/i30.jpg" alt="صينية اللمة" loading="lazy">
+      <p>صينية اللمة - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="صينية اللمة" data-price="90" data-img="img/i30.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ورق عنب سادة">
+      <img src="img/i70.jpg" alt="ورق عنب سادة" loading="lazy">
+      <p>ورق عنب سادة - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="ورق عنب سادة" data-price="90" data-img="img/i70.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ورق عنب عكاوي">
+      <img src="img/i71.jpg" alt="ورق عنب عكاوي" loading="lazy">
+      <p>ورق عنب عكاوي - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="ورق عنب عكاوي" data-price="90" data-img="img/i71.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ورق عنب كوارع">
+      <img src="img/i72.jpg" alt="ورق عنب كوارع" loading="lazy">
+      <p>ورق عنب كوارع - 90 L.E</p>
+      <button type="button" class="add-btn" data-name="ورق عنب كوارع" data-price="90" data-img="img/i72.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="sides">شوربة وأرز</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="شوربة خضار">
+      <img src="img/i26.jpg" alt="شوربة خضار" loading="lazy">
+      <p>شوربة خضار - 40 L.E</p>
+      <button type="button" class="add-btn" data-name="شوربة خضار" data-price="40" data-img="img/i26.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="شوربة كريمة">
+      <img src="img/i27.jpg" alt="شوربة كريمة" loading="lazy">
+      <p>شوربة كريمة - 40 L.E</p>
+      <button type="button" class="add-btn" data-name="شوربة كريمة" data-price="40" data-img="img/i27.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="أرز أبيض">
+      <img src="img/i00.jpg" alt="أرز أبيض" loading="lazy">
+      <p>أرز أبيض - 40 L.E</p>
+      <button type="button" class="add-btn" data-name="أرز أبيض" data-price="40" data-img="img/i00.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="أرز بسمتي">
+      <img src="img/i01.jpg" alt="أرز بسمتي" loading="lazy">
+      <p>أرز بسمتي - 40 L.E</p>
+      <button type="button" class="add-btn" data-name="أرز بسمتي" data-price="40" data-img="img/i01.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<p id="no-results" class="no-results" hidden>لا توجد نتائج</p>
+</main>
+<footer>
+  <p>&copy; AMR &amp; ELWY-Restaurant and cafe - جميع الحقوق محفوظة</p>
+  <p class="dev-credits">developed by : Nayera Shalaby &amp; Reen komeha</p>
+</footer>
+<div id="cart-modal" aria-hidden="true">
+  <div class="cart-modal-content" dir="rtl">
+    <button type="button" class="cart-close" aria-label="إغلاق السلة">&times;</button>
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-customer-info">
+      <label for="customerName">الاسم</label>
+      <input type="text" id="customerName" autocomplete="name" placeholder="اكتب اسمك">
+      <label for="customerAddress">العنوان</label>
+      <textarea id="customerAddress" autocomplete="street-address" rows="3" placeholder="اكتب عنوان التوصيل"></textarea>
+    </div>
+    <div class="cart-summary">
+      <strong>الإجمالي: <span id="cart-total">0</span> L.E</strong>
+      <button id="clear-cart" type="button" class="checkout-button">تفريغ السلة</button>
+      <button id="whatsapp-submit-btn" type="button" class="whatsapp-button">إرسال الطلب عبر واتساب 💬</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

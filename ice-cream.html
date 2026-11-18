@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#333333">
+<title>AMR &amp; ELWY - الآيس كريم</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="AMR &amp; ELWY LOGO"></a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="ابحث عن آيس كريم..." aria-label="بحث">
+      <button class="search-btn" type="button" id="searchBtn" aria-label="بحث">🔍</button>
+    </div>
+    <button class="menu-icon" id="menuTogg" type="button" aria-label="القائمة">☰</button>
+  </div>
+</header>
+<nav class="main-nav"><ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul></nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" id="closeMenu">&times;</span>
+  <ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul>
+</div>
+<button id="cart-btn" class="cart-fab" type="button" aria-label="فتح السلة">🛒 <span id="cart-count">0</span></button>
+<main>
+<h1 class="page-title">قائمة الآيس كريم</h1>
+<section class="products-grid">
+    <div class="product-item" data-name="آيس كريم">
+      <img src="img/i75.jpg" alt="آيس كريم" loading="lazy">
+      <p>آيس كريم - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="آيس كريم" data-price="35" data-img="img/i75.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<p id="no-results" class="no-results" hidden>لا توجد نتائج</p>
+</main>
+<footer>
+  <p>&copy; AMR &amp; ELWY-Restaurant and cafe - جميع الحقوق محفوظة</p>
+  <p class="dev-credits">developed by : Nayera Shalaby &amp; Reen komeha</p>
+</footer>
+<div id="cart-modal" aria-hidden="true">
+  <div class="cart-modal-content" dir="rtl">
+    <button type="button" class="cart-close" aria-label="إغلاق السلة">&times;</button>
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-customer-info">
+      <label for="customerName">الاسم</label>
+      <input type="text" id="customerName" autocomplete="name" placeholder="اكتب اسمك">
+      <label for="customerAddress">العنوان</label>
+      <textarea id="customerAddress" autocomplete="street-address" rows="3" placeholder="اكتب عنوان التوصيل"></textarea>
+    </div>
+    <div class="cart-summary">
+      <strong>الإجمالي: <span id="cart-total">0</span> L.E</strong>
+      <button id="clear-cart" type="button" class="checkout-button">تفريغ السلة</button>
+      <button id="whatsapp-submit-btn" type="button" class="whatsapp-button">إرسال الطلب عبر واتساب 💬</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

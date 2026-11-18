@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#333333">
+<title>AMR &amp; ELWY - المطعم والكافيه</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="AMR &amp; ELWY LOGO"></a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="ابحث..." aria-label="بحث">
+      <button class="search-btn" type="button" id="searchBtn" aria-label="بحث">🔍</button>
+    </div>
+    <button class="menu-icon" id="menuTogg" type="button" aria-label="القائمة">☰</button>
+  </div>
+</header>
+<nav class="main-nav"><ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul></nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" id="closeMenu">&times;</span>
+  <ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul>
+</div>
+<button id="cart-btn" class="cart-fab" type="button" aria-label="فتح السلة">🛒 <span id="cart-count">0</span></button>
+<main>
+  <section class="category-showcase" aria-labelledby="category-title">
+    <div class="section-heading">
+      <span>استكشف قائمتنا</span>
+      <h1 id="category-title">اختر ما يناسبك</h1>
+      <p>نكهات مختارة بعناية لكل وقت ومزاج.</p>
+    </div>
+    <div class="categories-grid">
+      <article class="category-item">
+        <img src="img/i79.jpg" alt="البيتزا" loading="lazy">
+        <div class="category-content">
+          <h2>البيتزا</h2>
+          <p>عجينة مخبوزة بعناية وتغطيات لا تقاوم.</p>
+          <a class="category-link" href="meal.html#pizza">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i77.jpg" alt="الباستا" loading="lazy">
+        <div class="category-content">
+          <h2>الباستا</h2>
+          <p>وصفات دافئة ومشبعة بلمسة المطعم.</p>
+          <a class="category-link" href="meal.html#pasta">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i65.jpg" alt="المشاوي" loading="lazy">
+        <div class="category-content">
+          <h2>المشاوي</h2>
+          <p>مشاوي على الفحم بنكهة أصلية.</p>
+          <a class="category-link" href="meal.html#grill">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i06.jpg" alt="البرجر والساندوتشات" loading="lazy">
+        <div class="category-content">
+          <h2>البرجر والساندوتشات</h2>
+          <p>ساندوتشات طازجة بنكهات غنية.</p>
+          <a class="category-link" href="meal.html#sandwich">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i73.jpg" alt="المشروبات" loading="lazy">
+        <div class="category-content">
+          <h2>المشروبات</h2>
+          <p>مشروبات منعشة ودافئة تكمل تجربتك.</p>
+          <a class="category-link" href="drinks.html">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i91.jpg" alt="الحلويات" loading="lazy">
+        <div class="category-content">
+          <h2>الحلويات</h2>
+          <p>حلويات تختم بها وجبتك.</p>
+          <a class="category-link" href="dessert.html">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+      <article class="category-item">
+        <img src="img/i75.jpg" alt="الآيس كريم" loading="lazy">
+        <div class="category-content">
+          <h2>الآيس كريم</h2>
+          <p>آيس كريم بنكهات متنوعة.</p>
+          <a class="category-link" href="ice-cream.html">اكتشف القائمة <span aria-hidden="true">←</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; AMR &amp; ELWY-Restaurant and cafe - جميع الحقوق محفوظة</p>
+  <p class="dev-credits">developed by : Nayera Shalaby &amp; Reen komeha</p>
+</footer>
+<div id="cart-modal" aria-hidden="true">
+  <div class="cart-modal-content" dir="rtl">
+    <button type="button" class="cart-close" aria-label="إغلاق السلة">&times;</button>
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-customer-info">
+      <label for="customerName">الاسم</label>
+      <input type="text" id="customerName" autocomplete="name" placeholder="اكتب اسمك">
+      <label for="customerAddress">العنوان</label>
+      <textarea id="customerAddress" autocomplete="street-address" rows="3" placeholder="اكتب عنوان التوصيل"></textarea>
+    </div>
+    <div class="cart-summary">
+      <strong>الإجمالي: <span id="cart-total">0</span> L.E</strong>
+      <button id="clear-cart" type="button" class="checkout-button">تفريغ السلة</button>
+      <button id="whatsapp-submit-btn" type="button" class="whatsapp-button">إرسال الطلب عبر واتساب 💬</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#333333">
+<title>AMR &amp; ELWY - المشروبات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="AMR &amp; ELWY LOGO"></a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="ابحث عن مشروب..." aria-label="بحث">
+      <button class="search-btn" type="button" id="searchBtn" aria-label="بحث">🔍</button>
+    </div>
+    <button class="menu-icon" id="menuTogg" type="button" aria-label="القائمة">☰</button>
+  </div>
+</header>
+<nav class="main-nav"><ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul></nav>
+<div class="side-menu" id="sideMenu">
+  <span class="close-btn" id="closeMenu">&times;</span>
+  <ul><li><a href="index.html">الصفحة الرئيسية</a></li><li><a href="drinks.html">المشروبات</a></li><li><a href="meal.html">الوجبات</a></li><li><a href="dessert.html">الحلويات</a></li><li><a href="ice-cream.html">الآيس كريم</a></li></ul>
+</div>
+<button id="cart-btn" class="cart-fab" type="button" aria-label="فتح السلة">🛒 <span id="cart-count">0</span></button>
+<main>
+<h1 class="page-title">قائمة المشروبات</h1>
+<div class="chips"><a href="#cold">مشروبات وموهيتو</a><a href="#shake">ميلك شيك وقهوة</a></div>
+<h2 class="menu-section-title" id="cold">مشروبات وموهيتو</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="موهيتو">
+      <img src="img/i64.jpg" alt="موهيتو" loading="lazy">
+      <p>موهيتو - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="موهيتو" data-price="35" data-img="img/i64.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="موهيتو ميكس">
+      <img src="img/i63.jpg" alt="موهيتو ميكس" loading="lazy">
+      <p>موهيتو ميكس - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="موهيتو ميكس" data-price="35" data-img="img/i63.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="الكتريك ليمون">
+      <img src="img/i04.jpg" alt="الكتريك ليمون" loading="lazy">
+      <p>الكتريك ليمون - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="الكتريك ليمون" data-price="35" data-img="img/i04.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بلو باشن">
+      <img src="img/i10.jpg" alt="بلو باشن" loading="lazy">
+      <p>بلو باشن - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="بلو باشن" data-price="35" data-img="img/i10.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بلو بيري">
+      <img src="img/i11.jpg" alt="بلو بيري" loading="lazy">
+      <p>بلو بيري - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="بلو بيري" data-price="35" data-img="img/i11.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بلو سكاي">
+      <img src="img/i12.jpg" alt="بلو سكاي" loading="lazy">
+      <p>بلو سكاي - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="بلو سكاي" data-price="35" data-img="img/i12.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بلو هاواي">
+      <img src="img/i13.jpg" alt="بلو هاواي" loading="lazy">
+      <p>بلو هاواي - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="بلو هاواي" data-price="35" data-img="img/i13.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="جرين ابل">
+      <img src="img/i18.jpg" alt="جرين ابل" loading="lazy">
+      <p>جرين ابل - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="جرين ابل" data-price="35" data-img="img/i18.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="أناناس">
+      <img src="img/i02.jpg" alt="أناناس" loading="lazy">
+      <p>أناناس - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="أناناس" data-price="35" data-img="img/i02.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="بطيخ">
+      <img src="img/i09.jpg" alt="بطيخ" loading="lazy">
+      <p>بطيخ - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="بطيخ" data-price="35" data-img="img/i09.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="رمان">
+      <img src="img/i21.jpg" alt="رمان" loading="lazy">
+      <p>رمان - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="رمان" data-price="35" data-img="img/i21.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ريد بيري">
+      <img src="img/i22.jpg" alt="ريد بيري" loading="lazy">
+      <p>ريد بيري - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="ريد بيري" data-price="35" data-img="img/i22.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="فراولة">
+      <img src="img/i43.jpg" alt="فراولة" loading="lazy">
+      <p>فراولة - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="فراولة" data-price="35" data-img="img/i43.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="كيوي مرجريتا">
+      <img src="img/i51.jpg" alt="كيوي مرجريتا" loading="lazy">
+      <p>كيوي مرجريتا - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="كيوي مرجريتا" data-price="35" data-img="img/i51.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="شيري كولا">
+      <img src="img/i29.jpg" alt="شيري كولا" loading="lazy">
+      <p>شيري كولا - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="شيري كولا" data-price="35" data-img="img/i29.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="كولا">
+      <img src="img/i50.jpg" alt="كولا" loading="lazy">
+      <p>كولا - 35 L.E</p>
+      <button type="button" class="add-btn" data-name="كولا" data-price="35" data-img="img/i50.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<h2 class="menu-section-title" id="shake">ميلك شيك وقهوة</h2>
+<section class="products-grid">
+    <div class="product-item" data-name="ميلك شيك فانيلا">
+      <img src="img/i35.jpg" alt="ميلك شيك فانيلا" loading="lazy">
+      <p>ميلك شيك فانيلا - 45 L.E</p>
+      <button type="button" class="add-btn" data-name="ميلك شيك فانيلا" data-price="45" data-img="img/i35.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ميلك شيك شوكلت">
+      <img src="img/i28.jpg" alt="ميلك شيك شوكلت" loading="lazy">
+      <p>ميلك شيك شوكلت - 45 L.E</p>
+      <button type="button" class="add-btn" data-name="ميلك شيك شوكلت" data-price="45" data-img="img/i28.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="ميلك شيك كراميل">
+      <img src="img/i45.jpg" alt="ميلك شيك كراميل" loading="lazy">
+      <p>ميلك شيك كراميل - 45 L.E</p>
+      <button type="button" class="add-btn" data-name="ميلك شيك كراميل" data-price="45" data-img="img/i45.jpg">أضف إلى السلة</button>
+    </div>
+    <div class="product-item" data-name="آيس كوفي">
+      <img src="img/i49.jpg" alt="آيس كوفي" loading="lazy">
+      <p>آيس كوفي - 45 L.E</p>
+      <button type="button" class="add-btn" data-name="آيس كوفي" data-price="45" data-img="img/i49.jpg">أضف إلى السلة</button>
+    </div>
+</section>
+<p id="no-results" class="no-results" hidden>لا توجد نتائج</p>
+</main>
+<footer>
+  <p>&copy; AMR &amp; ELWY-Restaurant and cafe - جميع الحقوق محفوظة</p>
+  <p class="dev-credits">developed by : Nayera Shalaby &amp; Reen komeha</p>
+</footer>
+<div id="cart-modal" aria-hidden="true">
+  <div class="cart-modal-content" dir="rtl">
+    <button type="button" class="cart-close" aria-label="إغلاق السلة">&times;</button>
+    <h2>سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-customer-info">
+      <label for="customerName">الاسم</label>
+      <input type="text" id="customerName" autocomplete="name" placeholder="اكتب اسمك">
+      <label for="customerAddress">العنوان</label>
+      <textarea id="customerAddress" autocomplete="street-address" rows="3" placeholder="اكتب عنوان التوصيل"></textarea>
+    </div>
+    <div class="cart-summary">
+      <strong>الإجمالي: <span id="cart-total">0</span> L.E</strong>
+      <button id="clear-cart" type="button" class="checkout-button">تفريغ السلة</button>
+      <button id="whatsapp-submit-btn" type="button" class="whatsapp-button">إرسال الطلب عبر واتساب 💬</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
